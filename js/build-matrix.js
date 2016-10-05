@@ -9,7 +9,3 @@ function buildMatrix() {
   }
   return square;
 }
-
-(function wordsquare(square) {
-  console.log(makeSquare());
-})();

@@ -4,7 +4,8 @@ function buildMatrix() {
   var square = [[],[],[],[]];
   for (let i = 0; i < 4; i++) {
     for (let j = 0; j < 4; j++) {
-      square[i].push(chars.charAt(Math.floor(Math.random() * 26)));
+      square[i].push({ value: chars.charAt(Math.floor(Math.random() * 26)),
+                       visited: false });
     }
   }
   return square;
